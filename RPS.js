@@ -17,7 +17,7 @@ const computerScorePara = document.querySelector("#computer-score");
 
 const drawGame = () => {
     msg.innerText = "Game was Draw play again";
-    msg.style.backgroundColor= "blue";
+    msg.style.backgroundColor= "#081b31";
 };
 
 const showWinner = (userWin ,userChoice,computerChoice) => {

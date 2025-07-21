@@ -17,7 +17,7 @@ const computerScorePara = document.querySelector("#computer-score");
 
 const drawGame = () => {
     msg.innerText = "Game was Draw play again";
-    msg.style.backgroundColor= "red";
+    msg.style.backgroundColor= "blue";
 };
 
 const showWinner = (userWin ,userChoice,computerChoice) => {
@@ -26,13 +26,13 @@ const showWinner = (userWin ,userChoice,computerChoice) => {
         userScorePara.innerText = userScore;
         console.log("you win!");
         msg.innerText = `you win! your ${userChoice} beats ${computerChoice}`;
-        msg.style.backgroundColor= "brown";
+        msg.style.backgroundColor= "green";
     } else {
         computerScore++;
         computerScorePara.innerText = computerScore;
         console.log("you lose!");
         msg.innerText = `you lose!${computerChoice} beats your ${userChoice}`;
-        msg.style.backgroundColor= "green";
+        msg.style.backgroundColor= "red";
     }
 };
 
